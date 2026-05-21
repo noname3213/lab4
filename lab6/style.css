@@ -1,0 +1,332 @@
+/* Загальні стилі */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    background-color: #4e73df;
+    min-height: 350px;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+
+/* MENU FLEX */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #2e59d9;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #224abe;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #4e73df;
+    color: white;
+}
+
+/* TEAM FLEX */
+
+.authors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.author {
+    width: 250px;
+    text-align: center;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.author img {
+    width: 180px;
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* FORM */
+
+.feedback-form {
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #224abe;
+}
+
+/* SCHEME */
+
+.scheme-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* IFRAMES */
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE 768px */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .author {
+        width: 90%;
+    }
+}
+
+/* RESPONSIVE 375px */
+
+@media screen and (max-width: 375px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .authors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author {
+        width: 100%;
+        margin: 0;
+    }
+
+    .feedback-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    table {
+        font-size: 14px;
+    } 
+     @media (max-width: 375px){
+
+    header{
+
+        height: auto;
+
+        padding: 20px 10px;
+    }
+
+    h1{
+
+        font-size: 28px;
+    }
+
+    nav ul{
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    nav a{
+
+        font-size: 16px;
+    }
+
+    .container{
+
+        padding: 10px;
+    }
+
+    p{
+
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+    table{
+
+        font-size: 12px;
+
+        display: block;
+
+        overflow-x: auto;
+    }
+
+    iframe{
+
+        height: 250px;
+    }
+
+    form{
+
+        width: 100%;
+    }
+
+    input,
+    select,
+    textarea,
+    button{
+
+        font-size: 16px;
+    }
+
+    .person{
+
+        width: 100%;
+
+        margin: 10px 0;
+    }
+
+    .person img{
+
+        width: 100%;
+
+        height: auto;
+    }
+}
+}
