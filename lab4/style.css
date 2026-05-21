@@ -1,0 +1,153 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4e73df;
+    height: 350px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* Меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background: #2e59d9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #224abe;
+}
+
+/* Основний контейнер */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Таблиця */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #4e73df;
+    color: white;
+}
+
+/* Робоча група */
+.author {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.author img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Форма */
+.feedback-form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.feedback-form button {
+    background: #4e73df;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background: #224abe;
+}
+
+/* Адаптивність */
+@media screen and (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .feedback-form {
+        width: 90%;
+    }
+
+    .author {
+        width: 90%;
+    }
+     .scheme-img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+} 
